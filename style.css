@@ -170,3 +170,20 @@ input:focus {
   background-color: white;
   color: #2c71b8;
 }
+
+.carousel {
+  height: 400px;
+  background-color: #0a243e;
+}
+.filter-menu {
+  background-color: #0a243e;
+  height: 850px;
+}
+.device {
+  padding: 15px;
+  border: 1px solid white;
+}
+.device-image {
+  background-color: #cadbed;
+  text-align: center;
+}
