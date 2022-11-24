@@ -180,10 +180,88 @@ input:focus {
   height: 850px;
 }
 .device {
-  padding: 15px;
   border: 1px solid white;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .device-image {
+  padding: 15px;
   background-color: #cadbed;
   text-align: center;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-image {
+  align-self: center;
+  margin: auto;
+}
+
+.side-image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-image img {
+  border: 1px solid #2c71b8;
+  padding: 5px;
+}
+.empty {
+  width: 32px;
+}
+.device-info {
+  padding: 15px;
+  line-height: normal;
+  font-size: 21px;
+}
+.device-heading {
+  font-weight: bold;
+  font-size: 30px;
+  margin: -5px 0;
+}
+
+.description {
+  margin: 20px 0;
+}
+
+.characteristics li {
+  margin-bottom: 15px;
+}
+
+.characteristics span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.device-info .price {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.price span {
+  vertical-align: super;
+  font-size: 30px;
+}
+
+.add-cart-btn,
+.details-btn {
+  width: 210px;
+  height: 50px;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+}
+.details-btn {
+  border: 1px solid white;
+  background: #2c71b8;
+  margin: 20px auto 0;
+}
+.add-cart-btn {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  margin: 15px auto;
 }
