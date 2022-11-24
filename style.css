@@ -117,6 +117,7 @@ input:focus {
   font-family: "Roboto", sans-serif;
   font-size: 21px;
   font-weight: 300;
+  padding-left: 10px;
 }
 
 .search-field::placeholder {
@@ -213,7 +214,7 @@ input:focus {
 }
 .device-image {
   padding: 15px;
-  background-color: #cadbed;
+  background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
   height: 180px;
   display: flex;
