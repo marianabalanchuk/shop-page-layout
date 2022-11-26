@@ -197,6 +197,18 @@ input:focus {
   margin: auto;
 }
 
+.heading-sorting {
+  display: flex;
+  flex-direction: row;
+}
+
+.devices-container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .carousel {
   height: 400px;
   background-color: #0a243e;
