@@ -248,12 +248,13 @@ input:focus {
 }
 
 .device-image {
-  padding: 15px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
   height: 180px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .main-image {
@@ -265,15 +266,14 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: absolute;
+  left: 225px;
+  top: 10px;
 }
 
 .side-image img {
   border: 1px solid #2c71b8;
   padding: 5px;
-}
-
-.empty {
-  width: 32px;
 }
 
 .device-info {
