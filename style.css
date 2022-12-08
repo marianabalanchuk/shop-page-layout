@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-image: url(images/patt.png);
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -24,49 +27,61 @@ body {
   flex-wrap: wrap;
   padding: 0 !important;
 }
+
 [class*="col-"] {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
+
 .col-4 {
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
 }
+
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
+
 .col-8 {
   flex: 0 0 66.66666%;
   max-width: 66.66666%;
 }
+
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
 }
+
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
 .header {
   height: 100px;
   display: flex;
   background-color: rgba(255, 255, 255, 0.75);
 }
+
 .menu {
   display: flex;
 }
+
 .menu li {
   width: 25%;
   border-left: 1px solid #2c71b8;
 }
+
 .menu li:last-child {
   border-right: 1px solid #2c71b8;
 }
+
 .menu a {
   display: block;
   height: 50px;
@@ -76,6 +91,7 @@ body {
   color: #2c71b8;
   font-size: 21px;
 }
+
 .menu a:hover {
   background-color: #2c71b8;
   color: white;
@@ -98,6 +114,7 @@ body {
 input:focus {
   outline: none;
 }
+
 .search-button {
   background-color: #2c71b8;
   border: none;
@@ -128,12 +145,14 @@ input:focus {
 .shopping-cart {
   position: relative;
 }
+
 .cart-button {
   width: 40px;
   height: 40px;
   border: none;
   padding: 0;
 }
+
 .cart-counter {
   background-color: #2c71b8;
   color: white;
@@ -180,6 +199,7 @@ input:focus {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown:hover .dropdown-link {
   background-color: #2c71b8;
   color: white;
@@ -213,17 +233,20 @@ input:focus {
   height: 400px;
   background-color: #0a243e;
 }
+
 .filter-menu {
   background-color: #0a243e;
   height: 1200px;
   padding-right: 15px;
 }
+
 .device {
   border: 1px solid white;
   color: white;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .device-image {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.75);
@@ -248,14 +271,17 @@ input:focus {
   border: 1px solid #2c71b8;
   padding: 5px;
 }
+
 .empty {
   width: 32px;
 }
+
 .device-info {
   padding: 15px;
   line-height: normal;
   font-size: 21px;
 }
+
 .device-heading {
   font-weight: bold;
   font-size: 30px;
@@ -274,11 +300,13 @@ input:focus {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .device-info .price {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
+
 .price span {
   vertical-align: super;
   font-size: 30px;
@@ -293,21 +321,23 @@ input:focus {
   text-transform: uppercase;
   color: white;
   display: block;
-}
-.details-btn {
+
   border: 1px solid white;
   background: #2c71b8;
-  margin: 20px auto 0;
+  margin: 15px auto;
 }
-.add-cart-btn {
+
+.add-cart-btn:hover,
+.details-btn:hover {
   background-color: rgba(255, 255, 255, 0.25);
   border: none;
-  margin: 15px auto;
+
 }
 
 .nav-menu {
   margin: 30px 0 20px;
 }
+
 .nav-menu p,
 .nav-menu a {
   display: inline;
@@ -315,9 +345,11 @@ input:focus {
   color: #96b8dc;
   text-decoration: none;
 }
+
 .nav-menu a:hover {
   text-decoration: underline;
 }
+
 .page-heading {
   font-size: 48px;
   font-weight: bold;
@@ -329,6 +361,7 @@ input:focus {
 .sorting-block {
   padding-right: 0;
 }
+
 .sorting-header,
 .sorting-content li {
   height: 40px;
@@ -358,6 +391,7 @@ input:focus {
   overflow: visible;
   left: -1px;
 }
+
 .sorting-content li:hover {
   background-color: white;
   color: #2c71b8;
@@ -377,6 +411,7 @@ input:focus {
   text-decoration: none;
   color: white;
 }
+
 .footer {
   height: 100px;
   display: flex;
