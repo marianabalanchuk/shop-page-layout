@@ -236,7 +236,7 @@ input:focus {
 
 .filter-menu {
   background-color: rgba(255, 255, 255, 0.25);
-  height: 875px;
+  height: 865px;
   padding: 30px;
   margin: 0 15px;
   font-family: "Roboto",
@@ -279,7 +279,7 @@ input[type="checkbox"]:checked+label::before {
 
 .filter-menu p {
   text-align: center;
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
 .device {
