@@ -30,17 +30,22 @@ function closeModal() {
   modal.classList.remove("show");
 }
 
-let productsWishList = document.querySelectorAll(".add-wishlist");
+function showModalByScroll() {
+  if (window.scrollY > document.body.scrollHeight / 2) {
+    openModal();
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+}
+window.addEventListener("scroll", showModalByScroll);
 
-productsWishList.forEach((item) =>
-  item.addEventListener("click", function (event) {
-    let imgSrc = item.getAttribute("src");
-    if (imgSrc === "images/wishlist-blue.png") {
-      item.setAttribute("src", "images/wishlist-white.png");
-      item.style.background = "#2c71b8";
+let likeBtns = document.querySelectorAll(".like");
+
+likeBtns.forEach((item) =>
+  item.addEventListener("click", function () {
+    if (item.classList.contains("liked")) {
+      item.classList.remove("liked");
     } else {
-      item.setAttribute("src", "images/wishlist-blue.png");
-      item.style.background = "none";
+      item.classList.add("liked");
     }
   })
 );

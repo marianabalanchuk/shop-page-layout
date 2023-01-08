@@ -231,7 +231,17 @@ input:focus {
 
 .carousel {
   height: 400px;
-  background-color: #0a243e;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.carousel-text {
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 399px;
 }
 
 .filter-menu {
@@ -312,9 +322,32 @@ input[type="checkbox"]:checked+label::before {
   top: 10px;
 }
 
-.side-image img {
+.side-image div {
   border: 1px solid #2c71b8;
-  padding: 5px;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.like {
+  background-image: url(images/wishlist-blue.png);
+}
+
+.like:hover,
+.liked {
+  background-image: url(images/wishlist-white.png);
+  background-color: #2c71b8;
+}
+
+.zoom {
+  background-image: url(images/zoom.png);
+}
+
+.zoom:hover {
+  background-image: url(images/zoom-white.png);
+  background-color: #2c71b8;
 }
 
 .device-info {
