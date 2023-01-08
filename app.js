@@ -29,3 +29,18 @@ function closeModal() {
   modal.classList.add("hide");
   modal.classList.remove("show");
 }
+
+let productsWishList = document.querySelectorAll(".add-wishlist");
+
+productsWishList.forEach((item) =>
+  item.addEventListener("click", function (event) {
+    let imgSrc = item.getAttribute("src");
+    if (imgSrc === "images/wishlist-blue.png") {
+      item.setAttribute("src", "images/wishlist-white.png");
+      item.style.background = "#2c71b8";
+    } else {
+      item.setAttribute("src", "images/wishlist-blue.png");
+      item.style.background = "none";
+    }
+  })
+);
