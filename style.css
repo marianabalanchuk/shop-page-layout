@@ -180,6 +180,7 @@ input:focus {
 .dropdown-content {
   display: none;
   position: absolute;
+  z-index: 10;
 }
 
 .dropdown-content li {
@@ -237,12 +238,53 @@ input:focus {
   color: white;
 }
 
-.carousel-text {
+.slider {
+  margin: 0 25px;
+}
+
+.slider-text {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
-  line-height: 399px;
+  line-height: 350px;
 }
+
+.slick-dots li button::before {
+  display: none;
+}
+
+.slick-dots li.slick-active {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li {
+  border: 1px solid white;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-prev {
+  height: 200px !important;
+  width: 50px !important;
+  left: -45px !important;
+}
+
+.slick-next {
+  height: 200px !important;
+  width: 50px !important;
+  right: -28px !important;
+}
+
+.slick-prev:before {
+  content: url(images/left-arrow.svg) !important;
+}
+
+.slick-next:before {
+  content: url(images/right-arrow.svg) !important;
+}
+
 
 .filter-menu {
   background-color: rgba(255, 255, 255, 0.25);

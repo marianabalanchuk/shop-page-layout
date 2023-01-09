@@ -45,3 +45,7 @@ likeBtns.forEach((item) =>
     item.classList.toggle("liked");
   })
 );
+
+$(".slider").slick({
+  dots: true,
+});
