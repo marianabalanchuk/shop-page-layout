@@ -42,10 +42,6 @@ let likeBtns = document.querySelectorAll(".like");
 
 likeBtns.forEach((item) =>
   item.addEventListener("click", function () {
-    if (item.classList.contains("liked")) {
-      item.classList.remove("liked");
-    } else {
-      item.classList.add("liked");
-    }
+    item.classList.toggle("liked");
   })
 );
