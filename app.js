@@ -49,3 +49,48 @@ likeBtns.forEach((item) =>
 $(".slider").slick({
   dots: true,
 });
+
+let decrementButton = document.querySelectorAll(".decrement-btn");
+let incrementButton = document.querySelectorAll(".increment-btn");
+let productsCounter = document.querySelectorAll(".product-quantity input");
+
+console.log(decrementButton);
+
+function Counter(incrementButton, decrementButton, inputField) {
+  this.domRefs = {
+    incrementButton,
+    decrementButton,
+    inputField,
+  };
+
+  this.toggleButtonState = function () {
+    let count = this.domRefs.inputField.value;
+    this.domRefs.decrementButton.disabled = count <= 1;
+    this.domRefs.incrementButton.disabled = count >= 10;
+  };
+
+  this.toggleButtonState();
+
+  this.increment = function () {
+    this.domRefs.inputField.value = +this.domRefs.inputField.value + 1;
+    this.toggleButtonState();
+  };
+
+  this.decrement = function () {
+    this.domRefs.inputField.value = +this.domRefs.inputField.value - 1;
+    this.toggleButtonState();
+  };
+
+  this.domRefs.decrementButton.addEventListener(
+    "click",
+    this.decrement.bind(this)
+  );
+
+  this.domRefs.incrementButton.addEventListener(
+    "click",
+    this.increment.bind(this)
+  );
+}
+
+const counter1 = new Counter(incrementButton, decrementButton, productsCounter);
+console.log(counter1);

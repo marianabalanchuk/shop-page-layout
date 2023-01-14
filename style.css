@@ -364,7 +364,7 @@ input[type="checkbox"]:checked+label::before {
   top: 10px;
 }
 
-.side-image div {
+.side-image span {
   border: 1px solid #2c71b8;
   padding: 3px;
   width: 30px;
@@ -588,4 +588,25 @@ input[type="checkbox"]:checked+label::before {
 
 .hide {
   display: none;
+}
+
+.product-quantity {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.decrement-btn,
+.increment-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.product-counter {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #235A93;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
