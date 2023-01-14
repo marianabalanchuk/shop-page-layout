@@ -95,6 +95,3 @@ function Counter(incrementButtons, decrementButtons, inputFields, index) {
     this.increment.bind(this)
   );
 }
-
-//event every incrementButtons
-//on click get index of incrementButton and update value of inputfield of the same index close to him
