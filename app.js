@@ -50,47 +50,51 @@ $(".slider").slick({
   dots: true,
 });
 
-let decrementButton = document.querySelectorAll(".decrement-btn");
-let incrementButton = document.querySelectorAll(".increment-btn");
-let productsCounter = document.querySelectorAll(".product-quantity input");
+let decrementButtons = document.querySelectorAll(".decrement-btn");
+let incrementButtons = document.querySelectorAll(".increment-btn");
+let productsCounters = document.querySelectorAll(".product-counter");
 
-console.log(decrementButton);
+for (let index = 0; index < decrementButtons.length; index++) {
+  this.Counter(incrementButtons, decrementButtons, productsCounters, index);
+}
 
-function Counter(incrementButton, decrementButton, inputField) {
+function Counter(incrementButtons, decrementButtons, inputFields, index) {
   this.domRefs = {
-    incrementButton,
-    decrementButton,
-    inputField,
+    incrementButtons,
+    decrementButtons,
+    inputFields,
   };
 
-  this.toggleButtonState = function () {
-    let count = this.domRefs.inputField.value;
-    this.domRefs.decrementButton.disabled = count <= 1;
-    this.domRefs.incrementButton.disabled = count >= 10;
+  this.toggleButtonState = function (index) {
+    let count = this.domRefs.inputFields[index].value;
+    this.domRefs.decrementButtons[index].disabled = count <= 1;
+    this.domRefs.incrementButtons[index].disabled = count >= 10;
   };
 
-  this.toggleButtonState();
+  this.toggleButtonState(index);
 
   this.increment = function () {
-    this.domRefs.inputField.value = +this.domRefs.inputField.value + 1;
-    this.toggleButtonState();
+    this.domRefs.inputFields[index].value =
+      +this.domRefs.inputFields[index].value + 1;
+    this.toggleButtonState(index);
   };
 
   this.decrement = function () {
-    this.domRefs.inputField.value = +this.domRefs.inputField.value - 1;
-    this.toggleButtonState();
+    this.domRefs.inputFields[index].value =
+      +this.domRefs.inputFields[index].value - 1;
+    this.toggleButtonState(index);
   };
 
-  this.domRefs.decrementButton.addEventListener(
+  this.domRefs.decrementButtons[index].addEventListener(
     "click",
     this.decrement.bind(this)
   );
 
-  this.domRefs.incrementButton.addEventListener(
+  this.domRefs.incrementButtons[index].addEventListener(
     "click",
     this.increment.bind(this)
   );
 }
 
-const counter1 = new Counter(incrementButton, decrementButton, productsCounter);
-console.log(counter1);
+//event every incrementButtons
+//on click get index of incrementButton and update value of inputfield of the same index close to him
